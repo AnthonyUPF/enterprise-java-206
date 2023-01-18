@@ -7,7 +7,7 @@ public class Main {
         Student student1=new Student("student1",50);
         Student student2=new Student("student2",70);
         Student student3=new Student("student3",80);
-        Student student4=new Student("student4",40);
+        Student student4=new Student("student4",100);
 
         HashMap<String,Student> studentHashMap=new HashMap<>();
 
@@ -15,5 +15,12 @@ public class Main {
         studentHashMap.put(student2.getName(),student2);
         studentHashMap.put(student3.getName(),student3);
         studentHashMap.put(student4.getName(),student4);
+
+        System.out.println(studentHashMap.toString());
+
+        Student.increaseGrade(studentHashMap);
+
+        System.out.println(studentHashMap.toString());
+
     }
 }

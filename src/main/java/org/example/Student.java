@@ -1,5 +1,8 @@
 package org.example;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Student {
     private String name;
     private int grade;
@@ -29,5 +32,20 @@ public class Student {
 
     public int getGrade() {
         return grade;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", grade=" + grade +
+                '}';
+    }
+
+    public static HashMap<String,Student> increaseGrade(HashMap<String,Student> hashMap){
+        for(Student value: hashMap.values()){
+            value.setGrade((int) (1.1*value.getGrade()));
+        }
+        return hashMap;
     }
 }
