@@ -43,8 +43,8 @@ public class Student {
     }
 
     public static HashMap<String,Student> increaseGrade(HashMap<String,Student> hashMap){
-        for(Student value: hashMap.values()){
-            value.setGrade((int) (1.1*value.getGrade()));
+        for(Student student: hashMap.values()){
+            student.setGrade((int) (1.1*student.getGrade()));
         }
         return hashMap;
     }
