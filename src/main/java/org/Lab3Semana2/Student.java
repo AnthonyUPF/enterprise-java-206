@@ -1,4 +1,4 @@
-package org.example;
+package org.Lab3Semana2;
 
 import java.util.HashMap;
 
