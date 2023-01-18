@@ -16,11 +16,11 @@ public class Main {
         studentHashMap.put(student3.getName(),student3);
         studentHashMap.put(student4.getName(),student4);
 
-        System.out.println(studentHashMap.toString());
+        System.out.println(studentHashMap);
 
         Student.increaseGrade(studentHashMap);
 
-        System.out.println(studentHashMap.toString());
+        System.out.println(studentHashMap);
 
     }
 }
